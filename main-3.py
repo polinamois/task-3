@@ -1,37 +1,43 @@
 string = "A simple sentence has the most basic elements that make it a sentence: a subject a verb and a completed " \
          "thought "
 
-print (list(filter(lambda x: x % 17 == 0, range (1,1000))))
+def filter (x):
+ return list(filter(lambda x: x % 17 == 0, range(1, 1000)))
+ 
+         
+def filter (x):
+ return list(filter(lambda x: '2' in str(x), range(1, 1000)))
 
 
-print(list(filter(lambda x: '2' in str(x), range(1, 1000))))
-
-
-print(list(filter(lambda x: str(x) == str(x)[::-1], range(1, 10000))))
+def filter (x):
+ return list(filter(lambda x: str(x) == str(x)[::-1], range(1, 10000)))
 
 
 print(string.count(' '))
 
+def filter (x):
+ return ''.join((list(filter(lambda x: x not in "aeiouyAEIOUY", string.replace(' ', '')))))
 
-print(''.join((list(filter(lambda x: x not in "aeiouyAEIOUY", string.replace(' ', ''))))))
 
-
-print(list(filter(lambda x: len(x) <= 5, string.split())))
+def filter (x):
+ return list(filter(lambda x: len(x) <= 5, string.split()))
 
 
 print({word: len(word) for word in string.split()})
 
 
-print(list(set(filter(lambda x: x.isalpha(), string))))
+def filter (x):
+ return list(set(filter(lambda x: x.isalpha(), string)))
 
-
-print(list(map(lambda x: x**2, [1, 2, 3])))
+def filter (x):
+ return list(map(lambda x: x**2, [1, 2, 3]))
 
 
 print({(x, y): ((0 - x)  2 + (0 - y)  2) ** 0.5 for x, y in [(1, 1), (2, 3), (5, 3)] if 5 * x - 2 == y})
 
 
-print(list(map(lambda x: x ** 2, range(2, 27, 2))))
+def filter (x):
+ return list(map(lambda x: x ** 2, range(2, 27, 2)))
 
 
 print(max([((0 - x)  2 + (0 - y)  2) ** 0.5 for x, y in [(1, 1), (2, 3), (5, 3)] if x >= 0 and y >= 0]))
