@@ -1,25 +1,25 @@
 string = "A simple sentence has the most basic elements that make it a sentence: a subject a verb and a completed " \
          "thought "
 
-def filter (x):
+def filter_division(x):
  return list(filter(lambda x: x % 17 == 0, range(1, 1000)))
  
          
-def filter (x):
+def filter_parity(x):
  return list(filter(lambda x: '2' in str(x), range(1, 1000)))
 
 
-def filter (x):
+def filter_palindrome(x):
  return list(filter(lambda x: str(x) == str(x)[::-1], range(1, 10000)))
 
 
 print(string.count(' '))
 
-def filter (x):
+def filter_novowels(x):
  return ''.join((list(filter(lambda x: x not in "aeiouyAEIOUY", string.replace(' ', '')))))
 
 
-def filter (x):
+def filter_lenth(x):
  return list(filter(lambda x: len(x) <= 5, string.split()))
 
 
